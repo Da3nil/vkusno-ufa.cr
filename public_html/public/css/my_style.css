@@ -74,3 +74,8 @@ nav .active a {
     background-color: #ff6957 !important;
     color: #FFFFFF !important;
 }
+
+.form-order {
+    padding-top: 30px;
+    /*width: 400px;*/
+}

@@ -181,44 +181,7 @@
     </section>
     <!-- end content -->
 
-    <!-- content -->
-    <section class="page-img" id="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 animated hidding"
-                     data-animated="bounceInUp">
-                    <div class="build testimonial">
-                        <div class="flexslider" id="testiSlide">
-                            <ul class="slides">
-                                <li>
-                                    <div class="avatar">
-                                        <img src="img/avatar.jpg" alt="fudi" class="img-circle"/>
-                                    </div>
-                                    <p>"Текст комментария"</p>
-                                    <span>Имя Отчество</span>
-                                </li>
-                                <li>
-                                    <div class="avatar">
-                                        <img src="img/avatar.jpg" alt="fudi" class="img-circle"/>
-                                    </div>
-                                    <p>"Текст комментария"</p>
-                                    <span>Имя Отчество</span>
-                                </li>
-                                <li>
-                                    <div class="avatar">
-                                        <img src="img/avatar.jpg" alt="fudi" class="img-circle"/>
-                                    </div>
-                                    <p>"Текст комментария"</p>
-                                    <span>Имя Отчество</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section>
-    <!-- end content -->
+
 
     <!-- content -->
     <section class="page" id="recipes">
@@ -232,21 +195,192 @@
                 </div><!-- end col -->
             </div><!-- end row -->
 
-            <nav class="navbar navbar-default animated hidding" data-animated="bounceInUp" role="navigation">
+            <nav class="navbar navbar-default animated hidding nav-tabs" data-animated="bounceInUp" role="navigation">
                 <div class="container ">
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div style="display: flex !important; justify-content: center" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Выпечка</a></li>
-                            <li><a href="#">Салаты</a></li>
-                            <li><a href="#">Горячие блюда</a></li>
+                            <li class="active"><a data-toggle="tab" href="#panel1">Выпечка</a></li>
+                            <li><a data-toggle="tab" href="#panel2">Салаты</a></li>
+                            <li><a data-toggle="tab" href="#panel3">Горячие блюда</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
 
-            <div class="row">
+            {{--<ul class="nav nav-tabs">--}}
+                {{--<li class="active"><a data-toggle="tab" href="#panel1">Панель 1</a></li>--}}
+                {{--<li><a data-toggle="tab" href="#panel2">Панель 2</a></li>--}}
+                {{--<li class="dropdown">--}}
+                    {{--<a data-toggle="dropdown" class="dropdown-toggle" href="#">--}}
+                        {{--Другие панели--}}
+                        {{--<b class="caret"></b>--}}
+                    {{--</a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a data-toggle="tab" href="#panel3">Панель 3</a></li>--}}
+                        {{--<li><a data-toggle="tab" href="#panel4">Панель 4</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
+
+            <div class="tab-content">
+                <div id="panel1" class="tab-pane fade in active">
+                    {{--<h3>Выпечка</h3>--}}
+                    <div class="row">
+                <div class="metro">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay1 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>Текст</p>
+                                        <h3>Пироги</h3>
+                                    </div>
+                                </div>
+                                <img src="img/pirog2.png" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay2 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>Текст</p>
+                                        <h3>Губадия</h3>
+                                    </div>
+                                </div>
+                                <img src="img/gubadia.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay3 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>27 Recipes</p>
+                                        <h3>Штрудели</h3>
+                                    </div>
+                                </div>
+                                <img src="img/menu/shtrudeli.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay4 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>174 Recipes</p>
+                                        <h3>Осетинские пироги</h3>
+                                    </div>
+                                </div>
+                                <img src="img/oseti.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay5 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>131 Recipes</p>
+                                        <h3>Пирожки</h3>
+                                    </div>
+                                </div>
+                                <img src="img/menu/pirogki.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay6 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>237 Recipes</p>
+                                        <h3>Сосиски в тесте</h3>
+                                    </div>
+                                </div>
+                                <img src="img/menu/sosiski.jpg.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay7 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>329 Recipes</p>
+                                        <h3>Пицца</h3>
+                                    </div>
+                                </div>
+                                <img src="img/menu/pizza.jpg" alt="folio">
+                            </div>
+
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay8 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>145 Recipes</p>
+                                        <h3>CHINESE</h3>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/f8.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+
+
+                </div><!-- end metro -->
+            </div><!-- end row -->
+                </div>
+                <div id="panel2" class="tab-pane fade">
+                    {{--<h3>Салаты</h3>--}}
+                    <div class="row">
                 <div class="metro">
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay1 mywork"
                          data-animated="bounceInUp">
@@ -396,42 +530,161 @@
 
                 </div><!-- end metro -->
             </div><!-- end row -->
-            <!--<div class="row">-->
-            <!--<div class="col-lg-offset-2 col-lg-10">-->
-            <!--<div class="row">-->
-            <!--<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 animated hidding" data-animated="bounceInUp">-->
-            <!--<div class="build fudi-count text-center">-->
-            <!--<h3>23,567</h3>-->
-            <!--<p>Recipes Available</p>-->
-            <!--</div>&lt;!&ndash; end build &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end col &ndash;&gt;-->
-            <!--<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 animated hidding delay2" data-animated="bounceInUp">-->
-            <!--<div class="build fudi-count text-center">-->
-            <!--<h3>431,726</h3>-->
-            <!--<p>Active Users</p>-->
-            <!--</div>&lt;!&ndash; end build &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end col &ndash;&gt;-->
-            <!--<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 animated hidding delay2" data-animated="bounceInUp">-->
-            <!--<div class="build fudi-count text-center">-->
-            <!--<h3>892,726</h3>-->
-            <!--<p>Positive Reviewes</p>-->
-            <!--</div>&lt;!&ndash; end build &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end col &ndash;&gt;-->
-            <!--<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 animated hidding delay3" data-animated="bounceInUp">-->
-            <!--<div class="build fudi-count text-center">-->
-            <!--<h3>56,581</h3>-->
-            <!--<p>Photos & Video</p>-->
-            <!--</div>&lt;!&ndash; end build &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end col &ndash;&gt;-->
-            <!--<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 animated hidding delay4" data-animated="bounceInUp">-->
-            <!--<div class="build fudi-count text-center">-->
-            <!--<h3>3,182</h3>-->
-            <!--<p>Spices and Herbs</p>-->
-            <!--</div>&lt;!&ndash; end build &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end col &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end row &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end col &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; end row &ndash;&gt;-->
+                </div>
+                <div id="panel3" class="tab-pane fade">
+                    {{--<h3>Горячие блюда</h3>--}}
+                    <div class="row">
+                <div class="metro">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay1 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>Текст</p>
+                                        <h3>Пироги</h3>
+                                    </div>
+                                </div>
+                                <img src="img/pirog2.png" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay2 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>Текст</p>
+                                        <h3>Губадия</h3>
+                                    </div>
+                                </div>
+                                <img src="img/gubadia.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay3 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>27 Recipes</p>
+                                        <h3>FRENCH</h3>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/f3.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay4 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>174 Recipes</p>
+                                        <h3>Осетинские пироги</h3>
+                                    </div>
+                                </div>
+                                <img src="img/oseti.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay5 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>131 Recipes</p>
+                                        <h3>SEAFOOD</h3>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/f5.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay6 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>237 Recipes</p>
+                                        <h3>SUSHI</h3>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/f6.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay7 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>329 Recipes</p>
+                                        <h3>MEXICAN</h3>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/f7.jpg" alt="folio">
+                            </div>
+
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hidding animated delay8 mywork"
+                         data-animated="bounceInUp">
+
+                        <div class="folio">
+                            <div class="hcaption">
+                                <div class="myToggle"></div>
+                                <div class="attr-icon">
+                                    <div class="caption animated onHover" data-animatedin="zoomInUp"
+                                         data-animatedout="zoomOutDown">
+                                        <p>145 Recipes</p>
+                                        <h3>CHINESE</h3>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/f8.jpg" alt="folio">
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+
+
+                </div><!-- end metro -->
+            </div><!-- end row -->
+                </div>
+            </div>
         </div><!-- end container -->
 
     </section>
@@ -440,9 +693,25 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 animated hidding" data-animated="bounceInUp">
-                    <div class="build title-page text-center">
+                    <div class="build title-page text-center row">
                         <h2>СДЕЛАТЬ ЗАКАЗ</h2>
                         <div class="title-line"></div>
+                        <div class="form-order">
+                            <div class="form-order__wrap col-md-offset-3 col-md-6">
+                                <form class="">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="inputName">Как Вас зовут?</label>
+                                        <input type="text" class="form-control" id="inputName" placeholder="Как Вас зовут?">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="inputPhone">Номер телефона</label>
+                                        <input type="text" class="form-control" id="inputPhone" placeholder="Номер телефона">
+                                    </div>
+                                    <br>
+                                    <button style="width: 100%" type="submit" class="btn btn-default">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
                     </div><!-- end col -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -451,6 +720,45 @@
         </div><!-- end container -->
 
     </section>
+
+    <!-- content -->
+    <section class="page-img" id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 animated hidding"
+                     data-animated="bounceInUp">
+                    <div class="build testimonial">
+                        <div class="flexslider" id="testiSlide">
+                            <ul class="slides">
+                                <li>
+                                    <div class="avatar">
+                                        <img src="img/avatar.jpg" alt="fudi" class="img-circle"/>
+                                    </div>
+                                    <p>"Текст комментария"</p>
+                                    <span>Имя Отчество</span>
+                                </li>
+                                <li>
+                                    <div class="avatar">
+                                        <img src="img/avatar.jpg" alt="fudi" class="img-circle"/>
+                                    </div>
+                                    <p>"Текст комментария"</p>
+                                    <span>Имя Отчество</span>
+                                </li>
+                                <li>
+                                    <div class="avatar">
+                                        <img src="img/avatar.jpg" alt="fudi" class="img-circle"/>
+                                    </div>
+                                    <p>"Текст комментария"</p>
+                                    <span>Имя Отчество</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section>
+    <!-- end content -->
 
     <footer>
         <div class="container">
